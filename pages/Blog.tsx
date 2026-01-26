@@ -15,7 +15,11 @@ const Blog: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {BLOG_POSTS.map((post) => (
             <article key={post.id} className="bg-white rounded-[40px] shadow-sm overflow-hidden border border-gray-100 hover:shadow-2xl transition-all flex flex-col group">
-              <div className="h-56 bg-medical-blue flex items-center justify-center text-8xl transition-transform group-hover:scale-110 duration-700">{post.icon}</div>
+              {post.image ? (
+                <img src={post.image} alt={post.title} className="h-56 w-full object-cover object-center transition-transform group-hover:scale-110 duration-700" />
+              ) : (
+                <div className="h-56 bg-medical-blue flex items-center justify-center text-8xl transition-transform group-hover:scale-110 duration-700">{post.icon}</div>
+              )}
               <div className="p-10 flex-grow space-y-6">
                 <div className="flex justify-between items-center">
                   <span className="bg-blue-50 text-medical-lightBlue text-xs font-black px-5 py-2 rounded-full uppercase tracking-widest">{post.category}</span>

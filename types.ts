@@ -15,6 +15,7 @@ export interface BlogPost {
   category: string;
   date: string;
   icon: string;
+  image?: string;
 }
 
 export interface NavLink {
