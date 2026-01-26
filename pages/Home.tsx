@@ -67,6 +67,31 @@ const Home: React.FC = () => {
     <div className="flex flex-col min-h-screen">
       {/* Floating Action Buttons */}
       <div className="fixed bottom-8 left-8 z-[100] flex flex-col gap-5 animate-slide-up">
+                        {/* Facebook Page Button */}
+                        <a
+                          href="https://www.facebook.com/share/17noeYo9QP/?mibextid=wwXIfr"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-16 h-16 bg-[#1877F3] text-white rounded-full flex items-center justify-center shadow-[0_20px_50px_rgba(24,119,243,0.3)] hover:scale-110 transition-all group relative animate-pulse"
+                          title="صفحة الفيسبوك"
+                        >
+                          <svg className="w-9 h-9" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/>
+                          </svg>
+                        </a>
+                {/* Instapay Button */}
+                <a
+                  href="https://instapay.eg/01027470066"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-16 h-16 bg-[#6C47FF] text-white rounded-full flex items-center justify-center shadow-[0_20px_50px_rgba(108,71,255,0.3)] hover:scale-110 transition-all group relative animate-pulse"
+                  title="دفع عبر انستاباي"
+                >
+                  <svg className="w-9 h-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <circle cx="12" cy="12" r="10" stroke="#fff" strokeWidth="2" fill="#6C47FF" />
+                    <path d="M8 12h8M12 8v8" stroke="#fff" strokeWidth="2" strokeLinecap="round" />
+                  </svg>
+                </a>
         {/* WhatsApp Button */}
         <a 
           href={`https://wa.me/2${CLINIC_PHONE}`} 
