@@ -137,7 +137,7 @@ const Home: React.FC = () => {
             {/* Dr. Portrait */}
             <div className="relative w-full max-w-[500px] aspect-[4/5] rounded-[100px] overflow-hidden doctor-portrait-frame border-[16px] border-white group bg-slate-100">
               <img 
-                src="https://raw.githubusercontent.com/stackblitz/stackblitz-images/main/doctor-ashraf-portrait.jpg" 
+                src="/474468725_1034286568712022_593796889178693562_n.jpg" 
                 alt="الأستاذ الدكتور أشرف العزب" 
                 className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-[4000ms] ease-out"
               />
