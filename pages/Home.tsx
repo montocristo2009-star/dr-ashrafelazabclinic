@@ -263,3 +263,5 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+<meta name="google-site-verification" content="JGdpKDRgcCMMYrYppH_7YsGG-MEx9Ws2_BvV44egWQg" />
+
